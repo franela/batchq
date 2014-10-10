@@ -1,0 +1,14 @@
+{
+  "name": "array-batch",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDepdencies": {
+    "mocha": "1.21.x"
+  }
+}
