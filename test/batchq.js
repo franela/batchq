@@ -1,12 +1,8 @@
 var BatchQueue = require('../index');
 var assert = require('assert');
 
-describe('BatchQ Tests', function() {
-
-
-
+describe('BatchQueue', function() {
   describe('#push', function() {
-
     it('Should work', function(){
       var bqueue = new BatchQueue();
       bqueue.push('element');
