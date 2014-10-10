@@ -17,7 +17,9 @@ BatchQueue.prototype.push = function() {
   }
 }
 
+
+BatchQueue.prototype.splice = function() {
+  return this.array.splice.apply(this.array, arguments);
+}
+
 module.exports = BatchQueue;
-
-
-
