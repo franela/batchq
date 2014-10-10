@@ -8,5 +8,10 @@ describe('BatchQueue', function() {
       bqueue.push('element');
       assert.equal(bqueue.length, 1);
     });
+    it('Should work with multiple arguments', function() {
+      var bqueue = new BatchQueue();
+      bqueue.push('element1', 'element2');
+      assert.equal(bqueue.length, 2);
+    });
   });
 });

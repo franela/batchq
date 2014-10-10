@@ -10,11 +10,9 @@ function BatchQueue(limit, callback) {
 
 };
 
-BatchQueue.prototype.push = function(value) {
-  this.array.push(value);
+BatchQueue.prototype.push = function() {
+  this.array.push.apply(this.array, arguments);
 }
-
-
 
 module.exports = BatchQueue;
 
