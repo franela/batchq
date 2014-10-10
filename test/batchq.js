@@ -33,4 +33,12 @@ describe('BatchQueue', function() {
       assert.equal(batchq.length, 0);
     });
   });
+
+  describe('#flush', function() {
+    it('Should work', function(done) {
+      var batchq = new BatchQueue(5, done);
+      batchq.push(1);
+      batchq.flush();
+    });
+  });
 });
