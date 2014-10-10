@@ -23,7 +23,9 @@ BatchQueue.prototype.splice = function() {
 }
 
 BatchQueue.prototype.flush = function() {
-  this.callback();
+  if (this.length > 0) {
+    this.callback();
+  }
 }
 
 module.exports = BatchQueue;

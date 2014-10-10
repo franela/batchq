@@ -40,5 +40,11 @@ describe('BatchQueue', function() {
       batchq.push(1);
       batchq.flush();
     });
+    it('Should not call callback if empty', function() {
+      var batchq = new BatchQueue(5, function(){
+        throw new Error('Should not get here');
+      });
+      batchq.flush();
+    });
   });
 });

@@ -1,6 +1,6 @@
 {
   "name": "batchq",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple queue which calls a callback every time capacity is reached",
   "main": "index.js",
   "repository": {
@@ -10,7 +10,15 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
   },
-  "author": "",
+  "contributors": [{
+    "name": "Marcos Lilljedahl",
+    "email": "marcosnils@gmail.com",
+    "url": "www.twitter.com/marcosnils"
+  },{
+    "name": "Jonathan Leibiuisky",
+    "email": "ionathan@gmail.com",
+    "url": "www.twitter.com/xetorthio"
+  }],
   "license": "MIT",
   "devDependencies": {
     "mocha": "1.21.x"
