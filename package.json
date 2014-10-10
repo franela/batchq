@@ -1,6 +1,6 @@
 {
   "name": "batchq",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple queue which calls a callback every time capacity is reached",
   "main": "index.js",
   "repository": {
